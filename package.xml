@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+    <name>value_iteration_planner</name>
+    <version>0.0.1</version>
+    <description>
+
+        This planner uses value iteration for global planning. This planner solves the optimal action at every pose in the map, while the computing cost is high.
+
+    </description>
+    <author>Ryuichi Ueda</author>
+    <maintainer email="ryuichiueda@gmail.com">Ryuichi Ueda</maintainer>
+    <license>BSD</license>
+    <!-- <url>http://wiki.ros.org/value_iteration_planner</url> -->
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>tf2_geometry_msgs</build_depend>
+
+    <depend>angles</depend>
+    <depend>base_local_planner</depend>
+    <depend>costmap_2d</depend>
+    <depend>eigen</depend>
+    <depend>nav_core</depend>
+    <depend>pluginlib</depend>
+    <depend>roscpp</depend>
+    <depend>tf2</depend>
+    <depend>tf2_ros</depend>
+
+    <export>
+        <nav_core plugin="${prefix}/bgp_plugin.xml" />
+    </export>
+</package>

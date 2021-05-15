@@ -1,0 +1,7 @@
+<library path="lib/libvalue_iteration_planner">
+  <class name="value_iteration_planner/ValueIterationPlanner" type="value_iteration_planner::ValueIterationPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>
+      planner based on value iteration
+    </description>
+  </class>
+</library>
